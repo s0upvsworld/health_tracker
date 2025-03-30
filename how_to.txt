@@ -1,0 +1,15 @@
+Connect:
+
+log into it:
+    psql -U your_username -d health
+
+show directory:
+    ----connect and then,
+    SHOW data_directory;
+
+create backup:
+    pg_dump -U your_username -d health -f /path/to/directory/health_backup.sql
+
+read entries:
+    psql -U ken -d health -c "SELECT * FROM entries;"
+

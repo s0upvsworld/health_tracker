@@ -1,7 +1,7 @@
 CREATE TABLE entries (
     id SERIAL PRIMARY KEY,
     date DATE UNIQUE NOT NULL,
-    weight DECIMAL(5,2) NOT NULL
+    weight DECIMAL(4,1) NOT NULL
 );
 
 CREATE TABLE exercises (
